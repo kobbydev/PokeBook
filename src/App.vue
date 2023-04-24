@@ -1,6 +1,8 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router';
 import BgNoise from '@/assets/images/noise.png';
+
+if (!localStorage.pokeTheme) localStorage.setItem('pokeTheme', 'yellow');
 </script>
 
 <template>
@@ -13,7 +15,7 @@ import BgNoise from '@/assets/images/noise.png';
 </template>
 
 <style scoped>
-.main-body{
+.main-body {
 	position: absolute;
 	top: 0;
 	bottom: 0;

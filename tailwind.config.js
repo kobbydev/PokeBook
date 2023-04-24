@@ -2,6 +2,14 @@
 module.exports = {
 	purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
 	content: [],
+	safelist: [
+		'text-pink',
+		'text-blue',
+		'text-yellow',
+		'border-pink',
+		'border-blue',
+		'border-yellow',
+	],
 	theme: {
 		extend: {},
 		colors: {
@@ -33,15 +41,30 @@ module.exports = {
 		},
 		fontSize: {
 			lg: ['48px'],
-      sm: ['18px'],
-      m: ['24px']
+			sm: ['18px'],
+			m: ['24px'],
 		},
 		fontFamily: {
 			clash: ['"Clash Display"'],
+			general: ['"General Sans"'],
 		},
-		borderColor: (theme) => ({
-			...theme('colors'),
-		}),
+		borderColor: {
+			pink: '#E85382',
+			blue: '#39BADF',
+			yellow: '#E1A725',
+			grey: {
+				100: '#7B7B7B',
+			},
+			white: {
+				DEFAULT: '#FFFFFF',
+				100: '#EEEEEE',
+				200: '##F1F1F1',
+				300: '#E1E1E1',
+			},
+			black: {
+				100: '#101010',
+			},
+		},
 	},
 	plugins: [],
 };
