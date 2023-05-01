@@ -33,6 +33,7 @@ export function useFetch() {
 							name: response.data.name,
 							height: response.data.height,
 							weight: response.data.weight,
+							id: response.data.id,
 						};
 						// console.log('resp', newPokemon);
 						addToPokemons(newPokemon);

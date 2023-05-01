@@ -5,10 +5,10 @@ import { usePokemonStoreStore } from '../stores/PokemonStore';
 import { useThemeStoreStore } from '../stores/ThemeStore';
 import { storeToRefs } from 'pinia';
 // import { onBeforeMount } from 'vue';
-const { getAllPokemon } = usePokemonStoreStore();
+// const { getAllPokemon } = usePokemonStoreStore();
 const { selectedTheme } = storeToRefs(useThemeStoreStore());
 
-getAllPokemon();
+// getAllPokemon();
 
 // if (!localStorage.pokeTheme) localStorage.setItem('pokeTheme', 'yellow');
 </script>
